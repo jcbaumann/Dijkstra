@@ -5,3 +5,10 @@ Implementation of the Dijkstra algorithm in C++. This algortihme reads a graph f
 * input file with a graph in the trivial graph format
 * source node 
 * target node
+
+### Installation using CMake (Unix-System)
+* $ mkdir build-dijkstra 
+* $ cd build-dijkstra
+* $ cmake PathToDijkstraFolder
+* $ make
+* $ ./dijkstra inputfile source target
