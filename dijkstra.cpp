@@ -1,11 +1,4 @@
 #include "dijkstra.h"
-#include <iostream>
-#include <queue>
-#include <vector>
-#include <sstream>
-#include <fstream>
-#include <algorithm>
-#include <limits>
 
 // license
 void Dijkstra::license() {
@@ -147,6 +140,11 @@ void Dijkstra::printPath(const int & target) {
 
 // runs the program and calls the functions
 void Dijkstra::program(int argc, char * argv[]) {
+    
+    // argc = 4 because the argv at position 0 is the program itself
+    if(argc != 4) {
+        std::cout << "Dijkstra needs 3 parameters:\n     inputfile in tgf format\n     source\n     target";
+    }
     
     std::string filename = argv[1];
     int source = atoi(argv[2]);
