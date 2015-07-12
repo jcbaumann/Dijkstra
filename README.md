@@ -6,9 +6,10 @@ Implementation of the Dijkstra algorithm in C++. This algortihme reads a graph f
 * source node 
 * target node
 
-### Installation using CMake (Unix-System)
-* $ mkdir build-dijkstra 
-* $ cd build-dijkstra
-* $ cmake PathToDijkstraFolder
-* $ make
-* $ ./dijkstra inputfile source target
+### Installation 
+The program needs to be compiled using CMake. Execute the following commands on the Terminal:
+* mkdir build-dijkstra 
+* cd build-dijkstra
+* cmake PathToDijkstraFolder
+* make
+* ./dijkstra inputfile source target
